@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ForceSurge" parallel="classes" thread-count="27">
+
+    <test name="SmokeTest">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <exclude name="negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="finalsurge.tests.smoke.AddWorkoutTest"/>
+            <class name="finalsurge.tests.smoke.LogoutTest"/>
+            <class name="finalsurge.tests.smoke.OtherCalculatorTest"/>
+            <class name="finalsurge.tests.smoke.ReportsStatisticsTest"/>
+            <class name="finalsurge.tests.smoke.RoutesTest"/>
+            <class name="finalsurge.tests.smoke.ShoesTest"/>
+            <class name="finalsurge.tests.smoke.SignUpTest"/>
+            <class name="finalsurge.tests.smoke.ViewAddVitalsTest"/>
+            <class name="finalsurge.tests.smoke.WorkoutCalcTest"/>
+            <class name="finalsurge.tests.smoke.WorkoutLibraryTest"/>
+        </classes>
+    </test>
+    <test name="NegativeTest">
+        <groups>
+            <run>
+                <include name="negative"/>
+                <exclude name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="finalsurge.tests.negative.AddVitalsTest"/>
+            <class name="finalsurge.tests.negative.SignInAndSignUpTests"/>
+            <class name="finalsurge.tests.smoke.ReportsStatisticsTest"/>
+            <class name="finalsurge.tests.smoke.WorkoutCalcTest"/>
+        </classes>
+    </test>
+
+</suite>
