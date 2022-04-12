@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('tests') {
             steps {
-                git branch: '$BRANCH', url: 'https://github.com/VladBerezovksiy/FinalSurge.git'
+                git branch: '$BRANCH', url: 'https://github.com/NadezhdaSuzanskaya/Finalsurge.git'
 
                 sh "mvn clean test -Dmaven.test.failure.ignore=true -Dmaven.compiler.source=11 -Dmaven.compiler.target=11"
             }
