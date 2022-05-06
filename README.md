@@ -32,8 +32,11 @@ mvn allure:report
   
 ### Tests documentation
 
+
+
 | ID  | Cases                                                   | Status |
-|1    |Registration (+ negative tests)                          |done    |
+|-----|---------------------------------------------------------|--------|
+|1    |Registration (+ negative tests)                          |done    | 
 |2    |Authorization(+ negative tests)                          |done    |
 |3    |Add workout                                              |done    |
 |4    |Add new workout to library                               |done    |
